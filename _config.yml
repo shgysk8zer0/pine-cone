@@ -42,6 +42,8 @@ repository:
 icons: '/img/icons.svg'
 theme-color: '#c12026'
 background-color: '#242424'
+thumbnail:
+  url: /img/raster/background-400.jpg
 # discus-identifier:
 # google-analytics:
 # ad-sense:
