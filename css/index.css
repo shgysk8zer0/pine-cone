@@ -8,6 +8,7 @@
 @import url("https://cdn.kernvalley.us/css/core-css/fonts.css");
 @import url("https://cdn.kernvalley.us/css/animate.css/animate.css");
 @import url("https://cdn.kernvalley.us/css/core-css/animations.css");
+@import url("https://cdn.kernvalley.us/css/core-css/scrollbar.css");
 @import url("./vars.css");
 @import url("./layout.css");
 
@@ -32,4 +33,14 @@ input[hidden]:checked + label[for].btn-toggle .when-unchecked {
 img.avatar {
 	vertical-align: middle;
 	margin-left: 1.2em;
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		scroll-behavior: auto;
+	}
 }

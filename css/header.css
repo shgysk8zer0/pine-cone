@@ -1,3 +1,27 @@
 #header {
-	background-image: url("/img/neon.svg");
+	background-image: url("/img/raster/background-1400.jpg");
+}
+
+@media (max-width: 1280px) {
+	#header {
+		background-image: url("/img/raster/background-1280.jpg");
+	}
+}
+
+@media (max-width: 800px) {
+	#header {
+		background-image: url("/img/raster/background-800.jpg");
+	}
+}
+
+@media (max-width: 600px) {
+	#header {
+		background-image: url("/img/raster/background-600.jpg");
+	}
+}
+
+@media (max-width: 400px) {
+	#header {
+		background-image: url("/img/raster/background-400.jpg");
+	}
 }

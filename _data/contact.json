@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Motel",
+  "name": "Piazza's Pine Cone Inn",
+  "email": "pineconeinn@gmail.com",
+  "url": "https://piazzas-pinecone.com/",
+  "telephone": "+1-760-376-6669",
+  "email": "pineconeinn@gmail.com",
+  "priceRange": "$$",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://i.imgur.com/DLpcZAnt.jpg",
+    "width": 160,
+    "height": 160
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "13383 Sierra Way",
+    "addressLocality": "Kernville",
+    "addressRegion": "CA",
+    "postalCode": 93238,
+    "addressCountry": "USA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "35.756479",
+    "longitude": "-118.418575",
+    "url": "geo:35.756479,-118.418575;crs=wgs84;u=0"
+  }
+}

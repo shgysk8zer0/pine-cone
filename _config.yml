@@ -1,5 +1,6 @@
 author: Chris Zuber
-title: Jekyll Template Demo
+title: "Piazza's Pine Cone Inn"
+shortName: Pine Cone Inn
 # url: ''
 markdown: kramdown
 version: 1.0.0
@@ -16,32 +17,29 @@ manifest: /manifest.json
 tiles-config: /browserconfig.xml
 # service_worker:
 og-type: website
-description: "A template repository for Jekyll sites, including skeleton JS, CSS, SVGs, fonts, etc."
+description: "Family owned and operated since 1955 in Kernville, CA."
 mobile-web-app-capable: true
 # canonical: ''
 keywords:
-- jekyll
-- static
-- template
-- github
-- CSS3
-- HTML5
-- responsive design
-- progressive web app
-- pwa
-- ecmascript
-- javascript
-- es6
+- hotel
+- motel
+- inn
+- Piazza
+- Pine Cone
+- Kernville
+- Kern Valley
+- Kern River Valley
+- Lake Isabella
 repository:
   username: shgysk8zer0
-  project: jekyll-template
-  title: Jekyll Template
+  project: pine-cone
+  title: Pine Cone Inn
 # twitter:
-feed:
-  url: /feed.rss
-  type: application/rss+xml
+# feed:
+#   url: /feed.rss
+#   type: application/rss+xml
 icons: '/img/icons.svg'
-theme-color: '#528ff9'
+theme-color: '#c12026'
 background-color: '#242424'
 # discus-identifier:
 # google-analytics:

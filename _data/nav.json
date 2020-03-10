@@ -1,0 +1,17 @@
+[{
+  "label": "Rooms",
+  "href": "/#rooms",
+  "icon": "hotel"
+}, {
+  "label": "Map",
+  "href": "/#map",
+  "icon": "map"
+}, {
+  "label": "Events",
+  "href": "/#events",
+  "icon": "event"
+}, {
+  "label": "Contact",
+  "href": "/#contact",
+  "icon": "comment-discussion"
+}]
