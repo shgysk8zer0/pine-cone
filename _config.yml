@@ -86,7 +86,7 @@ scripts:
     crossorigin: anonymous
 stylesheets:
   development:
-  - href: /css/index.min.css
+  - href: /css/index.css
     media: all
   production:
   - href: /css/index.min.css
