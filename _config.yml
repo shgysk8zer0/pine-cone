@@ -14,8 +14,9 @@ viewport: width=device-width
 robots: 'follow, index'
 referrer: origin-when-cross-origin
 manifest: /manifest.json
+sitemap: /sitemap.xml
 tiles-config: /browserconfig.xml
-# service_worker:
+# service_worker: /service-worker.js
 og-type: website
 description: "Family owned and operated since 1955 in Kernville, CA."
 mobile-web-app-capable: true
