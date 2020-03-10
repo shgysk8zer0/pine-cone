@@ -125,3 +125,13 @@ button[is="share-button"] {
 .page-section:last-of-type {
 	margin-bottom: 1.5em;
 }
+
+.contact-panes.flex {
+	justify-content: space-evenly;
+}
+
+@media (max-width: 640px) {
+	.contact-panes.flex {
+		display: block;
+	}
+}
