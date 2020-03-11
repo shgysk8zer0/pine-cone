@@ -5,7 +5,7 @@
 	</h2>
 	<leaflet-map center="{{ site.data.contact.geo.latitude }},{{ site.data.contact.geo.longitude }}" zoom="15" crossorigin="annonymous" detectretina="" role="presentation" aria-hidden="true">
 		<leaflet-marker slot="markers" longitude="{{ site.data.contact.geo.longitude }}" latitude="{{ site.data.contact.geo.latitude }}" title="{{ site.data.contact.name }}" role="presentation" aria-hidden="true" itemtype="https://schema.org/Motel" itemscope="" open="">
-			<img src="/img/icons/hotel.svg" slot="icon" width="32" height="32" decoding="async" loading="lazy" alt="marker" />
+			<img class="hide-until-defined" src="/img/icons/hotel.svg" slot="icon" width="32" height="32" decoding="async" loading="lazy" alt="marker" aria-hidden="true" />
 			<div slot="popup">
 				<h4 itemprop="name">{{ site.data.contact.name }}</h4>
 				{% if site.data.contact.image %}

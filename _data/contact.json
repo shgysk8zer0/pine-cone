@@ -3,7 +3,7 @@
   "@type": "Motel",
   "name": "Piazza's Pine Cone Inn",
   "email": "pineconeinn@gmail.com",
-  "url": "https://piazzas-pinecone.com/",
+  "url": "https://piazzas-pinecone.com",
   "telephone": "+1-760-376-6669",
   "email": "pineconeinn@gmail.com",
   "priceRange": "$$",
@@ -12,6 +12,12 @@
     "url": "https://i.imgur.com/DLpcZAnt.jpg",
     "width": 160,
     "height": 160
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "url": "/img/raster/logo-256.png",
+    "height": 104,
+    "width": 256
   },
   "address": {
     "@type": "PostalAddress",

@@ -54,6 +54,7 @@ scripts:
   development:
   - src: /js/index.js
     async: true
+    type: module
   - src: 'https://cdn.kernvalley.us/components/share-button.js'
     type: module
     async: true

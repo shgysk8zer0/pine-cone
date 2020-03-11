@@ -25,3 +25,15 @@
 		background-image: url("/img/raster/background-400.jpg");
 	}
 }
+
+/*#header .header-content {
+	text-align: center;
+	background-color: var(--primary-color);
+	background-color: rgba(0,0,0,0.7);
+	background: linear-gradient(15deg, rgba(0,0,0,0.7), rgba(0,0,0,0.9)) transparent;
+	display: inline-block;
+	padding: 0.3em 0.8em;
+	width: 40vw;
+	height: 10rem;
+	transform: translate(30vw, calc(50vh - 5rem));
+}*/
