@@ -8,9 +8,7 @@ export function hashChange({newURL, oldURL = null})  {
 	const leaving = document.getElementById(from);
 
 	if (target instanceof HTMLElement && target.tagName === 'DIALOG') {
-		requestAnimationFrame(() => {
-			target.showModal();
-		});
+		requestAnimationFrame(() => target.showModal());
 	} else if (target instanceof HTMLElement && target.tagName === 'TOAST-MESSAGE') {
 		customElements.whenDefined('toast-message').then(() => target.show());
 	}
