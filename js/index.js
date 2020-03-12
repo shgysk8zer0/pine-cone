@@ -4,6 +4,15 @@ import { registerServiceWorker, ready } from 'https://cdn.kernvalley.us/js/std-j
 
 document.documentElement.classList.replace('no-js', 'js');
 
+if (! (location.origin.endsWith('.netlify.live') || location.hostname === 'localhost')) {
+	console.error = () => {};
+	console.warn = () => {};
+	console.log = () => {};
+	console.info = () => {};
+	console.dir = () => {};
+	console.table = () => {};
+}
+
 if (document.documentElement.dataset.hasOwnProperty('serviceWorker')) {
 	registerServiceWorker(document.documentElement.dataset.serviceWorker).catch(console.error);
 }
