@@ -1,4 +1,4 @@
-<nav id="nav" class="{{ include.class | default: 'sticky top shadow background-accent color-alt z-top flex row' }}" role="navigation" aria-label="Navigation">
+<nav id="nav" class="{{ include.class | default: 'sticky top shadow background-accent color-alt z-4 flex row' }}" role="navigation" aria-label="Navigation">
 	{% for item in site.data.nav %}
 		<a href="{{ item.href }}" class="center">
 			{% include icon.html icon=item.icon %}

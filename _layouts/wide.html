@@ -3,7 +3,14 @@ name: wide
 theme: default
 og-type: website
 itemtype: 'https://schema.org/WebPage'
-layout: default
+layout: bare
+data-layout: wide
 sidebar: false
 ---
-{{ content }}
+{% include header.html %}
+{% include nav.html %}
+<main id="main">
+	{{ content }}
+</main>
+{% include footer.html %}
+{% include share-button.html text=page.description %}

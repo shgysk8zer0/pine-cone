@@ -5,6 +5,11 @@
 @import url("./footer.css");
 @import url("https://cdn.kernvalley.us/css/core-css/layout/index.css");
 
+:root {
+	--nav-height: 4rem;
+	--header-height: calc(100vh - var(--nav-height));
+}
+
 .content {
 	margin: 1.2em;
 	padding: 0.4em 1.4em;
