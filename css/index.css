@@ -110,11 +110,11 @@ leaflet-map:not(:defined) [slot="icon"] {
 }
 
 body.background-primary {
-	background-color: #cecece;
+	background-color: #9f9f9f;
 }
 
 @media (prefers-color-scheme: dark) {
-	body.background-primary {
+	:root:not([data-theme="light"]) > body.background-primary {
 		background-color: #151515;
 	}
 }
