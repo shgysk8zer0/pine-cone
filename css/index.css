@@ -108,3 +108,19 @@ leaflet-map:not(:defined) [slot="icon"] {
 .btn.btn-transparent {
 	background-color: transparent;
 }
+
+body.background-primary {
+	background-color: #cecece;
+}
+
+@media (prefers-color-scheme: dark) {
+	body.background-primary {
+		background-color: #151515;
+	}
+}
+
+@media (min-width: 800px) {
+	.mobile-only {
+		display: none;
+	}
+}
