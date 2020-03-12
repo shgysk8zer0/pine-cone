@@ -17,3 +17,11 @@ export function hashChange({newURL, oldURL = null})  {
 		leaving.close();
 	}
 }
+
+export function back(event) {
+	if (event instanceof Event) {
+		event.preventDefault();
+	}
+
+	history.back();
+}
