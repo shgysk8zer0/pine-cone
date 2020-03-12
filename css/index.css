@@ -76,6 +76,10 @@ leaflet-map:not(:defined) [slot="icon"] {
 	font-size: 3rem;
 }
 
+leaflet-map {
+	border-radius: 6px;
+}
+
 @media (prefers-color-scheme: dark) {
 	.input-group input, .input-group textarea {
 		background-color: inherit;
