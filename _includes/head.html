@@ -46,14 +46,13 @@
 	{% endif %}
 	<title itemprop="headline">{{ page.title | default: 'Home' }} | {{ site.title }}</title>
 	{% if site.scripts %}{% for script in site.scripts[jekyll.environment] %}
-		{% include script.html src=script.src type=script.type crossorigin=script.crossorigin integrity=script.integrity nomodule=script.nomodule %}
+		{% include script.html src=script.src type=script.type crossorigin=script.crossorigin integrity=script.integrity async=script.async defer=script.defer nomodule=script.nomodule %}
 	{% endfor %}{% endif %}
-	<!-- <script type="module" src="/js/index.js" async=""></script> -->
 	{% if layout.scripts %}{% for script in layout.scripts %}
-		{% include script.html src=script.src type=script.type crossorigin=script.crossorigin integrity=script.integrity nomodule=script.nomodule %}
+		{% include script.html src=script.src type=script.type crossorigin=script.crossorigin integrity=script.integrity async=script.async defer=script.defer nomodule=script.nomodule %}
 	{% endfor %}{% endif %}
 	{% if page.scripts %}{% for script in page.scripts %}
-		{% include script.html src=script.src type=script.type crossorigin=script.crossorigin integrity=script.integrity nomodule=script.nomodule %}
+		{% include script.html src=script.src type=script.type crossorigin=script.crossorigin integrity=script.integrity async=script.async defer=script.defer nomodule=script.nomodule %}
 	{% endfor %}{% endif %}
 	<link rel="manifest" href="{{ site.manifest }}" />
 	<link rel="license" href="/LICENSE" />
