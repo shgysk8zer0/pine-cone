@@ -113,6 +113,10 @@ leaflet-map {
 	background-color: transparent;
 }
 
+.btn.color-inherit {
+	color: inherit;
+}
+
 body.background-primary {
 	background-color: #9f9f9f;
 }
