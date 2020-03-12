@@ -21,5 +21,8 @@ ready().then(() => {
 	});
 });
 
+if (location.hash === '#accessibility') {
+	location.hash = '';
+}
 
 window.addEventListener('hashchange', ({newURL, oldURL}) => handlers.hashChange({newURL, oldURL}), {passive: true});
