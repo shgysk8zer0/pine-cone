@@ -117,3 +117,21 @@ button[is="share-button"] {
 [data-flex-shrink="4"] {
 	flex-shrink: 4;
 }
+
+.page-section {
+	margin: 1.5em 1em 0 1em;
+}
+
+.page-section:last-of-type {
+	margin-bottom: 1.5em;
+}
+
+.contact-panes.flex {
+	justify-content: space-evenly;
+}
+
+@media (max-width: 640px) {
+	.contact-panes.flex {
+		display: block;
+	}
+}

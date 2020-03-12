@@ -1,0 +1,69 @@
+<section id="contact" class="card shadow page-section">
+	<h2 class="center">
+		{% include icon.html icon="comment-discussion" %}
+		<span>Contact Us</span>
+	</h2>
+	<div class="flex row contact-panes">
+		<form name="contact" id="contact-form" class="card " data-netlify="true">
+			<fieldset class="no-border">
+				<legend>Send a Message</legend>
+				<div class="input-group">
+					<label>
+						<div>
+							<span>Name</span>
+						</div>
+						<input type="text" name="name" id="contact-name" placeholder="First Last" autocomplete="name" required="" />
+					</label>
+				</div>
+				<div class="input-group">
+					<label>
+						<div>
+							{% include icon.html icon="call-start" %}
+							<span>Phone</span>
+						</div>
+						<input type="tel" name="telephone" id="contact-phone" placeholder="+1-555-555-5555" autocomplete="tel" />
+					</label>
+				</div>
+				<div class="input-group">
+					<label>
+						<div>
+							{% include icon.html icon="mail" %}
+							<span>Email</span>
+						</div>
+						<input type="email" name="email" id="contact-email" placeholder="user@example.com" required="" />
+					</label>
+				</div>
+				<div class="input-group">
+					<label>
+						<div>
+							{% include icon.html icon="note" %}
+							<span>Message</span>
+						</div>
+						<textarea name="message" placeholder="Enter message" required=""></textarea>
+					</label>
+				</div>
+			</fieldset>
+			<div class="flex row btns">
+				<button type="submit" class="btn btn-accept btn-wide">
+					{% include icon.html icon="check" %}
+					<span>Send</span>
+				</button>
+			</div>
+		</form>
+		<div id="contact-info" class="card center">
+			<img src="{{ site.data.contact.logo.url }}" width="{{ site.data.contact.logo.width }}" height="{{ site.data.contact.logo.height }}" alt="logo" itemprop="logo" decoding="async" loading="lazy" aria-label="{{ site.data.contact.name }}" />
+			<br />
+			<a href="tel:{{ site.data.contact.telephone }}" class="block">
+				{% include icon.html icon="call-start" %}
+				<span>{{ site.data.contact.telephone | replace: '+1-', '' }}</span>
+			</a>
+			<br />
+			<a href="mailto:{{ site.data.contact.email }}" class="block">
+				{% include icon.html icon="mail" %}
+				<span>{{ site.data.contact.email }}</span>
+			</a>
+			<br />
+			{% include address.html address=site.data.contact.address %}
+		</div>
+	</div>
+</section>

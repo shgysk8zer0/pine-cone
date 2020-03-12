@@ -1,5 +1,3 @@
-<button type="button" is="share-button" class="round shadow fixed z-4" aria-label="Share" title="{{ include.title | default: page.title }}" text="{{ include.text | default: page.description }}" url="{{ include.url | default: page.url | absolute_url }}">
-	<svg class="current-color icon">
-		<use xlink:href="{{ site.icons }}#public-share"></use>
-	</svg>
+<button type="button" is="share-button" class="round shadow fixed z-top" aria-label="Share" text="{{ include.text | default: page.description }}"{% if include.url %} url="{{ include.url }}"{% endif %} hidden="">
+	{% include icon.html icon="public-share" %}
 </button>

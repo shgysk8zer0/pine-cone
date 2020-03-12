@@ -1,3 +1,39 @@
 #header {
-	background-image: url("/img/neon.svg");
+	background-image: url("/img/raster/background-1400.jpg");
 }
+
+@media (max-width: 1280px) {
+	#header {
+		background-image: url("/img/raster/background-1280.jpg");
+	}
+}
+
+@media (max-width: 800px) {
+	#header {
+		background-image: url("/img/raster/background-800.jpg");
+	}
+}
+
+@media (max-width: 600px) {
+	#header {
+		background-image: url("/img/raster/background-600.jpg");
+	}
+}
+
+@media (max-width: 400px) {
+	#header {
+		background-image: url("/img/raster/background-400.jpg");
+	}
+}
+
+/*#header .header-content {
+	text-align: center;
+	background-color: var(--primary-color);
+	background-color: rgba(0,0,0,0.7);
+	background: linear-gradient(15deg, rgba(0,0,0,0.7), rgba(0,0,0,0.9)) transparent;
+	display: inline-block;
+	padding: 0.3em 0.8em;
+	width: 40vw;
+	height: 10rem;
+	transform: translate(30vw, calc(50vh - 5rem));
+}*/

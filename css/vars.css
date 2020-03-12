@@ -1,6 +1,17 @@
----
----
 :root {
-	background: {{ site.data.theme.dark.background }};
-	color: {{ site.theme-color }};
+	--accent-color-light: #c12026;
+	--accent-color-dark: var(--accent-color-light);
+	--button-active-background-light: #7A1418;
+	--button-active-background-dark: var(--button-active-background-light);
+	--map-width: 75vw;
+	--map-height: 60vh;
+	--scrollbar-color: var(--accent-color);
+	--scrollbar-track: var(--primary-color);
+	--button-padding: 0.7em 0.8em;
+}
+
+@media (max-width: 800px) {
+	:root {
+		--map-width: 90vw;
+	}
 }

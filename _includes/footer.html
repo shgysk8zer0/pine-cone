@@ -1,57 +1,52 @@
 <footer id="footer">
-	<div class="social-links cols-2">
-		{% if site.repository %}
-			<div class="cols inline-block">
-				<a class="block" href="https://github.com/{{ site.repository.username }}/" target="_blank" rel="external noopener">
-					<svg class="current-color icon social-icon">
-						<use xlink:href="{{ site.icons }}#mark-github" />
-					</svg>
-					<span>GitHub Profile</span>
-				</a>
-				<a class="block" href="https://github.com/{{ site.repository.username }}/{{ site.repository.project }}" target="_blank" rel="external noopener">
-					<svg class="current-color icon social-icon">
-						<use xlink:href="{{ site.icons }}#repo" />
-					</svg>
-					<span>GitHub Repo</span>
-				</a>
-				<a class="block" href="https://github.com/{{ site.repository.username }}/{{ site.repository.project }}/issues" target="_blank" rel="external noopener">
-					<svg class="current-color icon social-icon">
-						<use xlink:href="{{ site.icons }}#issue-opened" />
-					</svg>
-					<span>Report a Problem</span>
-				</a>
-			</div>
-		{% endif %}
-		<div class="cols inline-block">
-			<a class="block" href="https://shgysk8zer0.github.io" target="_blank" rel="external noopener" itemprop="sameAs">
-				<svg class="current-color icon social-icon">
-					<use xlink:href="{{ site.icons }}#web-browser" />
-				</svg>
-				<span>My Website</span>
-			</a>
-			<a class="block" href="https://twitter.com/shgysk8zer0" target="_blank" rel="external noopener" itemprop="sameAs">
-				<svg class="icon social-icon">
-					<use xlink:href="{{ site.icons }}#twitter" />
-				</svg>
-				<span>On Twitter</span>
-			</a>
-			<a class="block" href="https://www.linkedin.com/in/chris-zuber-455346141/" target="_blank" rel="external noopener" itemprop="sameAs">
-				<svg class="icon social-icon">
-					<use xlink:href="{{ site.icons }}#linkedin" />
-				</svg>
-				<span>LinkedIn</span>
-			</a>
+	<div class="footer-banner center uppercase" role="banner">
+		<div>Relax, Rejuvenate in the natural beauty</div>
+		<div>
+			<span>Hiking</span>
+			<span class="spacer">|</span>
+			<span>Biking</span>
+			<span class="spacer">|</span>
+			<span>Whitewater</span>
+			<span class="spacer">|</span>
+			<span>Fishing</span>
+			<span class="spacer">|</span>
+			<span>Swimming</span>
+			<span class="spacer">|</span>
+			<span>Climbing</span>
 		</div>
+		<div>We hope to see you soon</div>
 	</div>
 	<hr />
 	<div class="copyright">
 		<span>&copy;</span>
 		<time itemprop="copyrightYear">{{ 'now' | date: '%Y' }}</time>
-		<span itemprop="copyrightHolder" itemtype="https://schema.org/Person" itemscope="">
-			<a href="https://shgysk8zer0.github.io" target="_blank" rel="external noopener" itemprop="url">
-				<span itemprop="givenName">Chris</span>
-				<span itemprop="familyName">Zuber</span>
-			</a>
-		</span>
+		<span id="copyright-holder-name" itemprop="name">{{ site.data.contact.name }}</span>
+		<span itemprop="copyrightHolder" itemtype="https://schema.org/Organization" itemscope="" itemref="copyright-holder-name">
+			<meta itemprop="name" content="{{ site.data.contact.name }}" />
+			<br />
+			<img src="{{ site.data.contact.logo.url }}" width="{{ site.data.contact.logo.width }}" height="{{ site.data.contact.logo.height }}" alt="logo" itemprop="logo" decoding="async" loading="lazy" aria-label="{{ site.data.contact.name }}" />
+			<meta itemprop="image" content="{{ site.data.contact.image.url }}" />
+			{% include address.html address=site.data.contact.address %}
+			<hr />
+			<div class="flex row no-wrap overflow-x-auto">
+				<a href="{{ site.data.contact.url }}" class="inline-block center contact-link" rel="external noopener" itemprop="url" aria-label="{{ site.data.contact.name }} Website">
+					{% include icon.html icon="globe" %}
+					<br />
+					<span class="contact-text mobile-hidden">{{ site.data.contact.url | replace : 'https://', '' | replace: 'http://', '' }}</span>
+				</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href="tel:{{ site.data.contact.telephone }}" class="inline-block center contact-link" content="{{ site.data.contact.telephone }}" title="Call" aria-label="Call {{ site.data.contact.name }}">
+					{% include icon.html icon="call-start" %}
+					<br />
+					<span class="contact-text mobile-hidden">{{ site.data.contact.telephone | replace: '+1-', '' }}</span>
+				</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href="mailto:{{ site.data.contact.email }}" class="inline-block center contact-link" content="{{ site.data.contact.email }}" title="Email" aria-label="Email {{ site.data.contact.name }}">
+					{% include icon.html icon="mail" %}
+					<br />
+					<span class="contact-text mobile-hidden">{{ site.data.contact.email }}</span>
+				</a>
+			</div>
+		</div>
 	</div>
 </footer>
