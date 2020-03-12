@@ -4,7 +4,7 @@
 		<span>Contact Us</span>
 	</h2>
 	<div class="flex row contact-panes">
-		<form name="contact" id="contact-form" class="card " data-netlify="true">
+		<form name="contact" id="contact-form" data-netlify="true">
 			<fieldset class="no-border">
 				<legend>Send a Message</legend>
 				<div class="input-group">
@@ -50,7 +50,8 @@
 				</button>
 			</div>
 		</form>
-		<div id="contact-info" class="card center">
+		<hr class="mobile-only"/>
+		<div id="contact-info" class="center">
 			<img src="{{ site.data.contact.logo.url }}" width="{{ site.data.contact.logo.width }}" height="{{ site.data.contact.logo.height }}" alt="logo" itemprop="logo" decoding="async" loading="lazy" aria-label="{{ site.data.contact.name }}" />
 			<br />
 			<a href="tel:{{ site.data.contact.telephone }}" class="block">

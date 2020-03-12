@@ -12,6 +12,10 @@
 @import url("./vars.css");
 @import url("./layout.css");
 
+:root[data-layout="wide"] > body.grid {
+	grid-template-columns: auto minmax(320px, 1200px) auto;
+}
+
 input[hidden] + label[for].btn-toggle {
 	background-color: var(--button-disabled-background);
 	margin: 0.3rem;
@@ -72,6 +76,10 @@ leaflet-map:not(:defined) [slot="icon"] {
 	font-size: 3rem;
 }
 
+leaflet-map {
+	border-radius: 6px;
+}
+
 @media (prefers-color-scheme: dark) {
 	.input-group input, .input-group textarea {
 		background-color: inherit;
@@ -96,7 +104,27 @@ leaflet-map:not(:defined) [slot="icon"] {
 	margin-bottom: 0.6em;
 }
 
-.btn-wide {
+.btn.btn-wide {
 	width: 80%;
 	margin-left: 10%;
+}
+
+.btn.btn-transparent {
+	background-color: transparent;
+}
+
+body.background-primary {
+	background-color: #9f9f9f;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) > body.background-primary {
+		background-color: #151515;
+	}
+}
+
+@media (min-width: 800px) {
+	.mobile-only {
+		display: none;
+	}
 }
