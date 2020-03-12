@@ -29,7 +29,7 @@
 			{% include address.html address=site.data.contact.address %}
 			<hr />
 			<div class="flex row no-wrap overflow-x-auto">
-				<a href="{{ site.data.contact.url }}" class="inline-block center contact-link" rel="external noopener" itemprop="url">
+				<a href="{{ site.data.contact.url }}" class="inline-block center contact-link" rel="external noopener" itemprop="url" aria-label="{{ site.data.contact.name }} Website">
 					{% include icon.html icon="globe" %}
 					<br />
 					<span class="contact-text mobile-hidden">{{ site.data.contact.url | replace : 'https://', '' | replace: 'http://', '' }}</span>
