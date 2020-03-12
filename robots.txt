@@ -2,7 +2,7 @@
 layout: null
 ---
 User-agent: *
-{% if site.sitemap %}Sitemap: {{ site.sitemap | absolute_url }}{% endif %}
+{% if site.sitemap %}Sitemap: {{ site.url }}{{ site.sitemap }}{% endif %}
 {% if site.data.robots.disallow %}{% for path in site.data.robots.disallow %}
 Disallow: {{ path }}
 {% endfor %}{% endif %}
