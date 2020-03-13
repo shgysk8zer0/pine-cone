@@ -1,5 +1,7 @@
 <head>
-	<base href="/" />
+	{% if site.base %}
+		<base href="{{ site.base | absolute_url }}" />
+	{% endif %}
 	<meta charset="{{ site.charset }}" />
 	<meta name="viewport" content="{{ page.viewport | default: site.viewport }}" />
 	<meta name="robots" content="{{ page.robots | default: site.robots }}" />
