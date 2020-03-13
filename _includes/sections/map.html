@@ -27,10 +27,17 @@
 					</a>
 					<br />
 				{% endif %}
-				<a href="{{ site.data.contact.geo.url }}" tabindex="-1">
-					{% include icon.html icon="map" width="20" height="20" %}
-					<span>Open in Map App</span>
-				</a>
+				{% if site.data.contact.address.url %}
+					<a href="{{ site.data.contact.address.url }}" rel="noopener external" tabindex="-1">
+						{% include icon.html icon="map" width="20" height="20" %}
+						<span>Open in Maps</span>
+					</a>
+				{% else %}
+					<a href="{{ site.data.contact.geo.url }}" tabindex="-1">
+						{% include icon.html icon="map" width="20" height="20" %}
+						<span>Open in Map App</span>
+					</a>
+				{% endif %}
 				<meta itemprop="priceRange" content="{{ site.data.contact.priceRange | default: '$$' }}" />
 			</div>
 		</leaflet-marker>
