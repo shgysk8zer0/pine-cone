@@ -132,3 +132,16 @@ body.background-primary {
 		display: none;
 	}
 }
+
+@supports (position: sticky) {
+	.sticky-section-header {
+		position: sticky;
+		top: 0;
+		background-color: var(--accent-color);
+		color: var(--alt-color);
+		padding: 0.6em 0.7em;
+		border-radius: 8px 8px 0 0;
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+		font-family: var(--title-font)
+	}
+}
