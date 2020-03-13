@@ -14,4 +14,8 @@
   "label": "Map",
   "href": "/#map",
   "icon": "map"
+}, {
+  "label": "Disclaimer",
+  "icon": "preferences-desktop-accessibility",
+  "href": "#accessibility"
 }]

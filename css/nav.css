@@ -3,3 +3,11 @@
 	font-size: 1.2em;
 	justify-content: space-around;
 }
+
+#nav.flex > a {
+	flex-grow: 1;
+}
+
+#nav.flex > a:not(:first-of-type) {
+	border-left: 1px solid currentColor;
+}

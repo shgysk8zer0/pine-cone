@@ -43,6 +43,12 @@ img.avatar {
 	font-size: 1.2em;
 }
 
+.btn.btn-accept:focus {
+	background-color: var(--button-accept-active-background);
+	border: 1px dotted currentColor;
+}
+
+
 :root {
 	scroll-behavior: smooth;
 }
