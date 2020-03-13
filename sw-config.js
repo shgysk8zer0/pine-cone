@@ -16,12 +16,12 @@ const config = {
 
 		/* JS, `customElements`, etc. */
 		'/js/index.min.js',
+		'/js/custom-elements.js',
 		'https://cdn.kernvalley.us/components/share-button.js',
 		'https://cdn.kernvalley.us/js/std-js/share-config.js',
 		'https://cdn.kernvalley.us/js/std-js/webShareApi.js',
 		'https://cdn.kernvalley.us/components/toast-message.js',
 		'https://cdn.kernvalley.us/components/toast-message.html',
-		'https://unpkg.com/@webcomponents/custom-elements@1.3.1/custom-elements.min.js',
 		'https://cdn.kernvalley.us/js/std-js/esQuery.js',
 		'https://cdn.kernvalley.us/js/std-js/functions.js',
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.esm.js',
@@ -32,8 +32,6 @@ const config = {
 		/* CSS */
 		'/css/index.min.css',
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
-		'https://polyfill.io/v3/polyfill.min.js',
-
 
 		/* Images & Icons */
 		'/img/apple-touch-icon.png',
@@ -47,7 +45,6 @@ const config = {
 		'https://cdn.kernvalley.us/img/octicons/mail.svg',
 		'https://cdn.kernvalley.us/img/logos/facebook.svg',
 		'https://cdn.kernvalley.us/img/logos/twitter.svg',
-		'https://cdn.kernvalley.us/img/logos/google-plus.svg',
 		'https://cdn.kernvalley.us/img/logos/linkedin.svg',
 		'https://cdn.kernvalley.us/img/logos/reddit.svg',
 		'https://cdn.kernvalley.us/img/logos/gmail.svg',
