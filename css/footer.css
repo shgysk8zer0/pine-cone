@@ -5,6 +5,10 @@
 	line-height: 1.8;
 }
 
+#footer .flex.row {
+	justify-content: space-evenly;
+}
+
 .social-links {
 	font-size: 1.3rem;
 }

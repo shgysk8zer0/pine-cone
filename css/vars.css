@@ -10,12 +10,18 @@
 	--button-padding: 0.7em 0.8em;
 	--card-radius: 10px;
 	--desktop-rem: 1.6vmax;
+	--nav-height: 4rem;
+	--header-height: calc(100vh - var(--nav-height));
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--blockquote-color: #A8A8A8;
 	}
+}
+
+:root[data-theme="dark"] {
+	--blockquote-color: #A8A8A8;
 }
 
 @media (max-width: 800px) {
