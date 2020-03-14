@@ -22,6 +22,14 @@
 	}
 }
 
+@media (max-width: 800px) {
+	#nav .nav-link svg {
+		height: 100%;
+		font-size: 1.6em;
+		vertical-align: middle;
+	}
+}
+
 @supports (position: sticky) {
 	.sticky-section-header {
 		position: sticky;

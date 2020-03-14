@@ -2,7 +2,7 @@
 	{% for item in site.data.nav %}
 		<a href="{{ item.href }}" class="nav-link center" aria-label="{{ item.label }}"  title="{{ item.label }}">
 			{% include icon.html icon=item.icon %}
-			<br />
+			<br class="mobile-hidden" />
 			<span class="nav-label mobile-hidden">{{ item.label }}</span>
 		</a>
 	{% endfor %}
