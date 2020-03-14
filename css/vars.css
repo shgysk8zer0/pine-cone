@@ -12,6 +12,7 @@
 	--desktop-rem: 1.6vmax;
 	--nav-height: 4rem;
 	--header-height: calc(100vh - var(--nav-height));
+	--blockquote-color: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,8 +25,13 @@
 	--blockquote-color: #A8A8A8;
 }
 
+:root[data-theme="light"] {
+	--blockquote-color: inherit;
+}
+
 @media (max-width: 800px) {
 	:root {
 		--map-width: 90%;
 	}
 }
+
