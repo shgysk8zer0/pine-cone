@@ -13,6 +13,7 @@ const config = {
 	stale: [
 		/* Other HTML */
 		'/img/icons.svg',
+		'https://cdn.kernvalley.us/components/slide-show/template.html',
 
 		/* JS, `customElements`, etc. */
 		'/js/index.min.js',
@@ -25,12 +26,14 @@ const config = {
 		'https://cdn.kernvalley.us/js/std-js/esQuery.js',
 		'https://cdn.kernvalley.us/js/std-js/functions.js',
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.esm.js',
+		'https://cdn.kernvalley.us/components/slide-show/class.js',
 		'https://cdn.kernvalley.us/components/leaflet/map.js',
 		'https://cdn.kernvalley.us/components/leaflet/map.html',
 		'https://cdn.kernvalley.us/components/leaflet/marker.js',
 
 		/* CSS */
 		'/css/index.min.css',
+		'https://cdn.kernvalley.us/components/slide-show/style.css',
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
 
 		/* Images & Icons */
