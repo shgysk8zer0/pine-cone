@@ -40,7 +40,7 @@ repository:
 #   url: /feed.rss
 #   type: application/rss+xml
 icons: '/img/icons.svg'
-theme-color: '#c12026'
+theme-color: '#900A14'
 background-color: '#242424'
 thumbnail:
   url: /img/raster/background-400.jpg
