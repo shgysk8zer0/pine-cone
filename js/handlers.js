@@ -16,6 +16,9 @@ export function hashChange({newURL, oldURL = null})  {
 	if (leaving instanceof HTMLElement && ['DIALOG', 'TOAST-MESSAGE'].includes(leaving.tagName)) {
 		leaving.close();
 	}
+
+	[...document.querySelectorAll('a.current')].forEach(a => a.classList.remove('current'));
+	[...document.querySelectorAll(`a.nav-link[href$="${CSS.escape(to)}"]`)].forEach(a => a.classList.add('current'));
 }
 
 export function back(event) {

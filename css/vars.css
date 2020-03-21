@@ -1,7 +1,7 @@
 :root {
-	--accent-color-light: #c12026;
+	--accent-color-light: #900A14;
 	--accent-color-dark: var(--accent-color-light);
-	--button-active-background-light: #7A1418;
+	--button-active-background-light: #7a1418;
 	--button-active-background-dark: var(--button-active-background-light);
 	--map-width: 75vw;
 	--map-height: 60vh;
@@ -9,10 +9,29 @@
 	--scrollbar-track: var(--primary-color);
 	--button-padding: 0.7em 0.8em;
 	--card-radius: 10px;
+	--desktop-rem: 1.6vmax;
+	--nav-height: 4rem;
+	--header-height: calc(100vh - var(--nav-height));
+	--blockquote-color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--blockquote-color: #A8A8A8;
+	}
+}
+
+:root[data-theme="dark"] {
+	--blockquote-color: #A8A8A8;
+}
+
+:root[data-theme="light"] {
+	--blockquote-color: inherit;
 }
 
 @media (max-width: 800px) {
 	:root {
-		--map-width: 90vw;
+		--map-width: 90%;
 	}
 }
+

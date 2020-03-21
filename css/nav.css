@@ -1,5 +1,22 @@
 #nav {
-	padding: 0.6em;
 	font-size: 1.2em;
 	justify-content: space-around;
+}
+
+#nav.flex > .nav-link {
+	flex-grow: 1;
+	height: 100%;
+	display: inline-block;
+	background-color: var(--button-background);
+	transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+#nav.flex > .nav-link:hover, #nav.flex > .nav-link:focus, #nav > .nav-link.current {
+	background-color: var(--button-active-background);
+}
+
+#nav > .nav-link.current {
+	pointer-events: none;
+	box-shadow: var(--shadow-x, 0) var(--shadow-y, 0) var(--shadow-blur, 4px) var(--shadow-color, rgba(0, 0, 0, 0.6)) inset;
+	border-bottom: 4px solid currentColor;
 }

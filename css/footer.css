@@ -2,6 +2,11 @@
 	padding: 1.4em;
 	background-color: #232323;
 	color: #fafafa;
+	line-height: 1.8;
+}
+
+#footer .flex.row {
+	justify-content: space-evenly;
 }
 
 .social-links {

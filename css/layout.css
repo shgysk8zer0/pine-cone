@@ -6,8 +6,11 @@
 @import url("https://cdn.kernvalley.us/css/core-css/layout/index.css");
 
 :root {
-	--nav-height: 4rem;
-	--header-height: calc(100vh - var(--nav-height));
+
+}
+
+:root[data-layout="wide"] > body.grid {
+	grid-template-columns: auto minmax(320px, 1200px) auto;
 }
 
 .content {

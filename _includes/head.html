@@ -1,5 +1,7 @@
 <head>
-	<base href="/" />
+	{% if site.base %}
+		<base href="{{ site.base | absolute_url }}" />
+	{% endif %}
 	<meta charset="{{ site.charset }}" />
 	<meta name="viewport" content="{{ page.viewport | default: site.viewport }}" />
 	<meta name="robots" content="{{ page.robots | default: site.robots }}" />
@@ -62,14 +64,17 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/icon-16.png" />
 	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="{{ site.theme-color | default: '#528ff9' }}" />
 	<link rel="shortcut icon" href="/favicon.ico" />
+	{% if site.preconnect %}{% for preload in site.preload %}
+		<link rel="preconnect" href="{{ preload.href }}" />
+	{% endfor %}{% endif %}
 	{% if site.preload %}{% for preload in site.preload %}
-		<link rel="preload" href="{{ preload.href }}" as="{{ preload.as | default: 'image' }}" type="{{ preload.type }}"/>
+		<link rel="preload" href="{{ preload.href }}" as="{{ preload.as | default: 'image' }}" type="{{ preload.type }}" />
 	{% endfor %}{% endif %}
 	{% if layout.preload %}{% for preload in layout.preload %}
-		<link rel="preload" href="{{ preload.href }}" as="{{ preload.as | default: 'image' }}" type="{{ preload.type }}"/>
+		<link rel="preload" href="{{ preload.href }}" as="{{ preload.as | default: 'image' }}" type="{{ preload.type }}" />
 	{% endfor %}{% endif %}
 	{% if page.preload %}{% for preload in page.preload %}
-		<link rel="preload" href="{{ preload.href }}" as="{{ preload.as | default: 'image' }}" type="{{ preload.type }}"/>
+		<link rel="preload" href="{{ preload.href }}" as="{{ preload.as | default: 'image' }}" type="{{ preload.type }}" />
 	{% endfor %}{% endif %}
 	<link rel="preload" href="{{ site.icons }}" as="image" type="image/svg+xml" />
 	{% if site.stylesheets %}{% for stylesheet in site.stylesheets[jekyll.environment] %}

@@ -11,27 +11,33 @@
 @import url("https://cdn.kernvalley.us/css/core-css/scrollbar.css");
 @import url("./vars.css");
 @import url("./layout.css");
+@import url("./inputs.css");
+@import url("./map.css");
+@import url("./responsive.css");
 
-:root[data-layout="wide"] > body.grid {
-	grid-template-columns: auto minmax(320px, 1200px) auto;
+:root {
+	scroll-behavior: smooth;
 }
 
-input[hidden] + label[for].btn-toggle {
-	background-color: var(--button-disabled-background);
-	margin: 0.3rem;
-	transition: background-color 300ms ease-in-out;
-}
-
-input[hidden]:checked + label[for].btn-toggle {
-	background-color: var(--button-background);
-}
-
-input[hidden]:not(:checked) + label[for].btn-toggle .when-checked {
+:root.no-js .requires-js {
 	display: none;
 }
 
-input[hidden]:checked + label[for].btn-toggle .when-unchecked {
-	display: none;
+:root.no-js dialog:target {
+	display: block !important;
+	position: static;
+	background: inherit;
+	border: var(--dialog-border, solid);
+	background: var(--dialog-background, var(--primary-color, white));
+	color: var(--dialog-color, var(--default-color, black));
+	max-height: var(--dialog-max-height, 95vh);
+	max-width: var(--dialog-max-width, 95vw);
+	overflow: var(--dialog-overflow, auto);
+}
+
+:root.no-js #accessibility:target {
+	margin-top: 2em;
+	border-top: 3px solid currentColor;
 }
 
 img.avatar {
@@ -39,70 +45,24 @@ img.avatar {
 	margin-left: 1.2em;
 }
 
-:root {
-	scroll-behavior: smooth;
+.btn.btn-accept {
+	font-size: 1.2em;
 }
 
-@media (prefers-reduced-motion: reduce) {
-	:root {
-		scroll-behavior: auto;
-	}
+.btn.btn-accept:focus {
+	background-color: var(--button-accept-active-background);
+	border: 1px dotted currentColor;
 }
 
-:root.no-js dialog:target {
-	display: block !important;
-	position: static;
-	background: inherit;
-	color: inherit;
-}
 
 .hide-until-defined:not(:defined) {
 	display: none;
-}
-
-leaflet-map:not(:defined) [slot="icon"] {
-	display: none;
-}
-
-:root.no-js .requires-js {
-	display: none;
-}
-
-#footer .flex.row {
-	justify-content: space-evenly;
 }
 
 .contact-link .icon {
 	font-size: 3rem;
 }
 
-leaflet-map {
-	border-radius: 6px;
-}
-
-@media (prefers-color-scheme: dark) {
-	.input-group input, .input-group textarea {
-		background-color: inherit;
-		color: currentColor;
-		transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-		border-width: 0 0 2px 0;
-	}
-
-	.input-group input:focus, .input-group textarea:focus {
-		background-color: #fafafa;
-		color: #3a3a3a;
-	}
-}
-
-.input-group input, .input-group textarea {
-	margin-top: 0.2em;
-	padding: 0.4em 0.5em;
-	width: 100%;
-}
-
-.input-group:not(:last-of-type) {
-	margin-bottom: 0.6em;
-}
 
 .btn.btn-wide {
 	width: 80%;
@@ -119,16 +79,4 @@ leaflet-map {
 
 body.background-primary {
 	background-color: #9f9f9f;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root:not([data-theme="light"]) > body.background-primary {
-		background-color: #151515;
-	}
-}
-
-@media (min-width: 800px) {
-	.mobile-only {
-		display: none;
-	}
 }

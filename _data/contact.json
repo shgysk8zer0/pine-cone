@@ -25,7 +25,8 @@
     "addressLocality": "Kernville",
     "addressRegion": "CA",
     "postalCode": 93238,
-    "addressCountry": "USA"
+    "addressCountry": "USA",
+    "url": "https://goo.gl/maps/yaMxn4iakPj4tDvC9"
   },
   "geo": {
     "@type": "GeoCoordinates",

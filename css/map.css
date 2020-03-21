@@ -1,0 +1,7 @@
+leaflet-map {
+	border-radius: 6px;
+}
+
+leaflet-map:not(:defined) [slot="icon"] {
+	display: none;
+}
